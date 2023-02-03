@@ -3,13 +3,13 @@ import os
 class vars(object):
     API_ID = int(os.environ.get("APP_ID", "15523618"))
     API_HASH = os.environ.get("API_HASH", "8979514968543c31a37a3ed8a0726d83")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5840649503:AAEgRn1ogjgHcJtEKjaAeWdnz7oH_hLKOU0")
-    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOMUBu36GtbH4dQrPrfkq3UotGP_TzVFDBDZ0BjKSoNTGa3II1LwRYX3FEqit2UTZ4NyHMdt4riIx6hv_pX30xtDDFc6O2Do2KaU3twtlM36FjiDwFe9s_UmG3_haPG_k-_ltt_vZVekfwqFX0xvb1cJlY_vqMxlBXlmfA2f5efwPv4Ze18SwTknHMPFXz93hMhSmpQyPzgso6RUM06Zr_Su6v1IQboP4trafUH_LzKpB1hlYvjxpHpTNX_3r2yhg3jXVBPG7GJNT-y_qTT1BIV8bmL-3ecBekjbfD9kmIZ9aWYKAk7r4HWMkuy3fcCkJuKfXgaqdxF91Oyjkm0tnSF9_D3E=")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5985275666:AAH6rGSsF63dt2SzKf1gWig9Lu1HcXJRx3w")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOJ4Bux66T7uXdYWZa7iHoRgSyWZNRDQS0H-Um8w0WWdmyg5LvRw91yNf8IYvSjOIiaH9sEekgFyyedj42UtFHRawIuyRVR0vPV5qdFRxOeoATrnUDxIlta45E6L7MGIMK2lg9WnMkMBowrrwZJB55u06Wtk8C2qn4ZftTPJtcdSiR_DwZ_DhIvov6dxq6oBuyFeja_UVmGcb8_9i3jDwEPPqXm-AXqWxsc6EktG9T2cqc-qSDSS5ghvRsWCKFRWRTV338f6AmFxg6KMp4WMXhtgkHbrRraCsM4FA5-Gvzu1lM3GnllHSFV5w26yQRgmSotQAACOzrd5bxiLnr0NMnE6WcPk=")
     HEROKU_MODE = os.environ.get("HEROKU_MODE", None)
     MANAGEMENT_MODE = os.environ.get("MANAGEMENT_MODE", None)
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "NisthaMusicBot")
-    SUPPORT = os.environ.get("SUPPORT", "TeleBotsSupport")
-    CHANNEL = os.environ.get("CHANNEL", "Fake_Peoples")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "NixaMusicXBot")
+    SUPPORT = os.environ.get("SUPPORT", "SankiWorldMF")
+    CHANNEL = os.environ.get("CHANNEL", "NixaWorld")
     START_IMG = os.environ.get("START_IMG", "https://te.legra.ph/file/535a7db55e251a316b807.jpg")
     CMD_IMG = os.environ.get("CMD_IMG", "https://te.legra.ph/file/5b5e408cfd6a6ee9e4bd7.jpg")
-    ASSISTANT_ID = int(os.environ.get("ASSISTANT_ID", "5881219743")) # required
+    ASSISTANT_ID = int(os.environ.get("ASSISTANT_ID", "5470233619")) # required
