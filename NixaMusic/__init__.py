@@ -1,5 +1,5 @@
 import os
-from vars import vars
+import vars
 
 from telethon import TelegramClient
 from telethon import TelegramClient, events
