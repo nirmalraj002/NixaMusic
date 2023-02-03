@@ -28,7 +28,7 @@ from youtubesearchpython import VideosSearch
 fotoplay = "https://te.legra.ph/file/c6c2f531f2161f6fc5f45.jpg"
 ngantri = "https://te.legra.ph/file/c6c2f531f2161f6fc5f45.jpg"
 from NixaMusic import call_py, NixaMusic, client as Client
-owner = "5613370564"
+owner = "5761513990"
 from NixaMusic.helpers.yt_dlp import bash
 from NixaMusic.helpers.chattitle import CHAT_TITLE
 from NixaMusic.helpers.queues import (
