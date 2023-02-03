@@ -125,7 +125,7 @@ async def _(event):
      await event.delete()
 
 btnn =[
-    [Button.url("sᴜᴘᴘᴏʀᴛ", url=f"t.me/{Config.SUPPORT}"), Button.url("ᴄʜᴀɴɴᴇʟ", url=f"t.me/{Config.CHANNEL}")],
+    [Button.url("sᴜᴘᴘᴏʀᴛ", url=f"t.me/{vars.SUPPORT}"), Button.url("ᴄʜᴀɴɴᴇʟ", url=f"t.me/{vars.CHANNEL}")],
     [Button.inline("ᴄʟᴏꜱᴇ", data="cls")]]
 
 
@@ -269,7 +269,7 @@ async def vplay(event):
         or not replied
         and not title
     ):
-        return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**Give Me Your Query Which You want to Stream**\n\n **Example**: `/vplay Nira Ishq Bass boosted`", buttons=btnn)
+        return await event.client.send_file(chat_id, vars.CMD_IMG, caption="**Give Me Your Query Which You want to Stream**\n\n **Example**: `/vplay Nira Ishq Bass boosted`", buttons=btnn)
     if replied and not replied.video and not replied.document:
         xnxx = await event.reply("`⇆ sᴇᴀʀᴄʜɪɴɢ...`")
         query = event.text.split(maxsplit=1)[1]
