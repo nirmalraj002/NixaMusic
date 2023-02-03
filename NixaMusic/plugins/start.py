@@ -24,8 +24,8 @@ async def start(event):
              caption=PM_START_TEXT.format(event.sender.first_name), 
              buttons=[
         [Button.url("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ➕", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-        [Button.url("📚 ꜱᴜᴘᴘᴏʀᴛ", f"https://t.me/{Config.SUPPORT}"), Button.url("🍂 ᴜᴘᴅᴀᴛᴇꜱ", f"https://t.me/{Config.CHANNEL}")],
-        [Button.inline("📑 ᴄᴏᴍᴍᴀɴᴅꜱ", data="help"), Button.url("🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Simple_Munda")]])
+        [Button.url("📚 ꜱᴜᴘᴘᴏʀᴛ", f"https://t.me/{vars.SUPPORT}"), Button.url("🍂 ᴜᴘᴅᴀᴛᴇꜱ", f"https://t.me/{vars.CHANNEL}")],
+        [Button.inline("📑 ᴄᴏᴍᴍᴀɴᴅꜱ", data="help"), Button.url("🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/NixaXD")]])
        return
 
     if event.is_group:
@@ -41,6 +41,6 @@ async def _(event):
     if event.is_private:
        await event.edit(PM_START_TEXT.format(event.sender.first_name), buttons=[
         [Button.url("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ➕", f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-        [Button.url("📚 ꜱᴜᴘᴘᴏʀᴛ", f"https://t.me/{Config.SUPPORT}"), Button.url("🍂 ᴜᴘᴅᴀᴛᴇꜱ", f"https://t.me/{Config.CHANNEL}")],
-        [Button.inline("📑 ᴄᴏᴍᴍᴀɴᴅꜱ", data="help"), Button.url("🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Simple_Munda")]])
+        [Button.url("📚 ꜱᴜᴘᴘᴏʀᴛ", f"https://t.me/{vars.SUPPORT}"), Button.url("🍂 ᴜᴘᴅᴀᴛᴇꜱ", f"https://t.me/{vars.CHANNEL}")],
+        [Button.inline("📑 ᴄᴏᴍᴍᴀɴᴅꜱ", data="help"), Button.url("🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/NixaXD")]])
        return
