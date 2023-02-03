@@ -38,8 +38,8 @@ async def kick(event, perm):
 
     replied_user = msg.sender_id
     us = msg.sender.username
-    info = await Anon.get_entity(us)
-    await Anon.kick_participant(event.chat_id, input_str or replied_user)
+    info = await NixaMusic.get_entity(us)
+    await NixaMusic.kick_participant(event.chat_id, input_str or replied_user)
     await event.reply(f"sᴜᴄᴄᴇssғᴜʟʟʏ ᴋɪᴄᴋᴇᴅ [{info.first_name}](tg://user?id={replied_user}) ғʀᴏᴍ {event.chat.title}")
 
 @NixaMusic.on(events.NewMessage(pattern="^[!?/]kickme"))
@@ -56,7 +56,7 @@ async def kickme(event):
         return
 
     await event.reply("ᴏᴋ, ᴀs ʏᴏᴜʀ ᴡɪsʜ")
-    await Anon.kick_participant(event.chat_id, event.sender_id)
+    await NixaMusic.kick_participant(event.chat_id, event.sender_id)
 
 @NixaMusic.on(events.NewMessage(pattern="^[!?/]ban ?(.*)"))
 @is_admin
@@ -77,7 +77,7 @@ async def ban(event, perm):
     replied_user = msg.sender_id
     us = msg.sender.username
     info = await NixaMusic.get_entity(us)
-    await Anon(EditBannedRequest(event.chat_id, replied_user, ChatBannedRights(until_date=None, view_messages=True)))
+    await NixaMusic(EditBannedRequest(event.chat_id, replied_user, ChatBannedRights(until_date=None, view_messages=True)))
     await event.reply(f"sᴜᴄᴄᴇssғᴜʟʟʏ ʙᴀɴɴᴇᴅ [{info.first_name}](tg://user?id={replied_user}) ɪɴ {event.chat.title}")
 
 @NixaMusic.on(events.NewMessage(pattern="^[!?/]unban ?(.*)"))
@@ -99,7 +99,7 @@ async def unban(event, perm):
     replied_user = msg.sender_id
     us = msg.sender.username
     info = await NixaMusic.get_entity(us)
-    await Anon(EditBannedRequest(event.chat_id, replied_user, ChatBannedRights(until_date=None, view_messages=False)))
+    await NixaMusic(EditBannedRequest(event.chat_id, replied_user, ChatBannedRights(until_date=None, view_messages=False)))
     await event.reply(f"sᴜᴄᴄᴇssғᴜʟʟʏ ᴜɴʙᴀɴɴᴇᴅ [{info.first_name}](tg://user?id={replied_user}) ɪɴ {event.chat.title}")
 
 @NixaMusic.on(events.NewMessage(pattern="^[!?/]skick"))
