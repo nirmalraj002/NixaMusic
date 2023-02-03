@@ -249,7 +249,7 @@ async def vc_end(event, perm):
 @NixaMusic.on(events.NewMessage(pattern="^[?!/]vplay"))
 @AssistantAdd
 async def vplay(event):
-    if Config.HEROKU_MODE == "ENABLE":
+    if vars.HEROKU_MODE == "ENABLE":
         await event.reply(" ⇆ ᴄᴜʀʀᴇɴᴛʟʏ ʜᴇʀᴏᴋᴜ ᴍᴏᴅᴇ ɪs ᴇɴᴀʙʟᴇᴅ sᴏ ʏᴏᴜ ᴄᴀɴ'ᴛ sᴛʀᴇᴀᴍ ᴠɪᴅᴇᴏ ʙᴇᴄᴀᴜsᴇ ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ ᴄᴀᴜsᴇ ᴏғ ʙᴀɴɴɪɴɢ ʏᴏᴜʀ ʜᴇʀᴏᴋᴜ ᴀᴄᴄᴏᴜɴᴛ.")
         return
     title = ' '.join(event.text[6:])
