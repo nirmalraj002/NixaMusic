@@ -21,20 +21,20 @@ def testspeed(m):
 
 @NixaMusic.on(events.NewMessage(pattern="^/speedtest"))
 async def speedtest_function(message):
-    m = await message.reply("Running Speed test")
+    m = await message.reply("ʀᴜɴɴɪɢ sᴘᴇᴇᴅ ᴛᴇsᴛ")
     loop = asyncio.get_event_loop()
     result = await loop.run_in_executor(None, testspeed, m)
-    output = f"""**Speedtest Results**
+    output = f"""✯ **sᴩᴇᴇᴅᴛᴇsᴛ ʀᴇsᴜʟᴛs** ✯
     
-**Client:**
-**__ISP:__** {result['client']['isp']}
-**__Country:__** {result['client']['country']}
+<u>**❥͜͡ᴄʟɪᴇɴᴛ :**</u>
+**» __ɪsᴩ :__** {result['client']['isp']}
+**» __ᴄᴏᴜɴᴛʀʏ :__** {result['client']['country']}
   
-**Server:**
-**__Name:__** {result['server']['name']}
-**__Country:__** {result['server']['country']}, {result['server']['cc']}
-**__Sponsor:__** {result['server']['sponsor']}
-**__Latency:__** {result['server']['latency']}  
-**__Ping:__** {result['ping']}"""
+<u>**❥͜͡sᴇʀᴠᴇʀ :**</u>
+**» __ɴᴀᴍᴇ :__** {result['server']['name']}
+**» __ᴄᴏᴜɴᴛʀʏ :__** {result['server']['country']}, {result['server']['cc']}
+**» __sᴩᴏɴsᴏʀ :__** {result['server']['sponsor']}
+**» __ʟᴀᴛᴇɴᴄʏ :__** {result['server']['latency']}  
+**» __ᴩɪɴɢ :__** {result['ping']}"""
     await NixaMusic.send_file(message.chat.id, result["share"], caption=output)
     await m.delete()
