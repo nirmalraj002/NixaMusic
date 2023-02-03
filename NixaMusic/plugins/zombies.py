@@ -47,7 +47,7 @@ async def clean(event, perm):
       await event.reply("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ʀɪɢʜᴛs.")
       return
     input_str = event.pattern_match.group(1)
-    stats = "Group is clean."
+    stats = "ɢʀᴏᴜᴘ ɪs ᴄʟᴇᴀɴ"
     deleted = 0
 
     if "clean" not in input_str:
