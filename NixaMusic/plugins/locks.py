@@ -115,7 +115,7 @@ async def unlock(event, perm):
        await event.reply("ᴜɴʟᴏᴄᴋᴇᴅ `ᴀʟʟ`.")
 
 
-@NisthaMusic.on(events.NewMessage(pattern="^[!?/]locktypes"))
+@NixaMusic.on(events.NewMessage(pattern="^[!?/]locktypes"))
 async def locktypes(event):
     if vars.MANAGEMENT_MODE == "ENABLE":
         return
