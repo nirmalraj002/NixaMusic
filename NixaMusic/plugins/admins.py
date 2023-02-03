@@ -1,6 +1,6 @@
 from telethon import events, Button
 from NixaMusic import NixaMusic
-from NisthaMusic.status import *
+from NixaMusic.status import *
 from vars import vars
 from telethon.tl.functions.channels import EditAdminRequest
 from telethon.tl.types import ChatAdminRights
