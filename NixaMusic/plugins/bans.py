@@ -76,7 +76,7 @@ async def ban(event, perm):
         return
     replied_user = msg.sender_id
     us = msg.sender.username
-    info = await Anon.get_entity(us)
+    info = await NixaMusic.get_entity(us)
     await Anon(EditBannedRequest(event.chat_id, replied_user, ChatBannedRights(until_date=None, view_messages=True)))
     await event.reply(f"sᴜᴄᴄᴇssғᴜʟʟʏ ʙᴀɴɴᴇᴅ [{info.first_name}](tg://user?id={replied_user}) ɪɴ {event.chat.title}")
 
@@ -98,7 +98,7 @@ async def unban(event, perm):
         return
     replied_user = msg.sender_id
     us = msg.sender.username
-    info = await Anon.get_entity(us)
+    info = await NixaMusic.get_entity(us)
     await Anon(EditBannedRequest(event.chat_id, replied_user, ChatBannedRights(until_date=None, view_messages=False)))
     await event.reply(f"sᴜᴄᴄᴇssғᴜʟʟʏ ᴜɴʙᴀɴɴᴇᴅ [{info.first_name}](tg://user?id={replied_user}) ɪɴ {event.chat.title}")
 
@@ -120,7 +120,7 @@ async def skick(event, perm):
     x = (await event.get_reply_message()).sender_id
     zx = (await event.get_reply_message())
     await event.delete()
-    await Anon.kick_participant(event.chat_id, x)
+    await NixaMusic.kick_participant(event.chat_id, x)
     await event.reply(f"sᴜᴄᴄᴇssғᴜʟʟʏ ᴋɪᴄᴋᴇᴅ [{info.first_name}](tg://user?id={replied_user}) ғʀᴏᴍ {event.chat.title}")
 
 @NixaMusic.on(events.NewMessage(pattern="^[!?/]dkick"))
@@ -155,11 +155,11 @@ async def dban(event, perm):
         await event.reply("» ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜsᴇʀ ᴏʀ ɢɪᴠᴇ ɪᴛs ᴜsᴇʀɴᴀᴍᴇ ᴛᴏ ʙᴀɴ ʜɪᴍ")
         return
     us = reply_msg.sender.username
-    info = await Anon.get_entity(us) 
+    info = await NixaMusic.get_entity(us) 
     x = (await event.get_reply_message()).sender_id
     zx = (await event.get_reply_message())
     await zx.delete()
-    await Anon(EditBannedRequest(event.chat_id, x, ChatBannedRights(until_date=None, view_messages=True)))
+    await NixaMusic(EditBannedRequest(event.chat_id, x, ChatBannedRights(until_date=None, view_messages=True)))
     await event.reply("sᴜᴄᴄᴇssғᴜʟʟʏ ʙᴀɴɴᴇᴅ !")
     await event.reply(f"sᴜᴄᴄᴇssғᴜʟʟʏ ʙᴀɴɴᴇᴅ [{info.first_name}](tg://user?id={replied_user}) ғʀᴏᴍ {event.chat.title}")
 
@@ -176,11 +176,11 @@ async def sban(event, perm):
         await event.reply("» ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜsᴇʀ sɪʟᴇɴᴛ ʙᴀɴ")
         return
     us = reply_msg.sender.username
-    info = await Anon.get_entity(us) 
+    info = await NixaMusic.get_entity(us) 
     x = (await event.get_reply_message()).sender_id
     zx = (await event.get_reply_message())
     await event.delete()
-    await Anon(EditBannedRequest(event.chat_id, x, ChatBannedRights(until_date=None, view_messages=True)))
+    await NixaMusic(EditBannedRequest(event.chat_id, x, ChatBannedRights(until_date=None, view_messages=True)))
     await event.reply(f"sᴜᴄᴄᴇssғᴜʟʟʏ ʙᴀɴɴᴇᴅ [{info.first_name}](tg://user?id={replied_user}) ғʀᴏᴍ {event.chat.title}")
 
 @NixaMusic.on(events.callbackquery.CallbackQuery(data="bans"))
