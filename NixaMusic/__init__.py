@@ -1,3 +1,5 @@
+  import os
+
 from telethon import TelegramClient
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
@@ -9,6 +11,8 @@ from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.INFO)
 
+
+from vars import vars
 BOT_USERNAME = vars.BOT_USERNAME
 ASSISTANT_ID = vars.ASSISTANT_ID
 
