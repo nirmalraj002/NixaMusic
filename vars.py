@@ -12,6 +12,4 @@ class vars(object):
     CHANNEL = os.environ.get("CHANNEL", "NixaWorld")
     START_IMG = os.environ.get("START_IMG", "https://te.legra.ph/file/3f47f71b0412f10fffe4c.jpg")
     CMD_IMG = os.environ.get("CMD_IMG", "https://te.legra.ph/file/3f47f71b0412f10fffe4c.jpg")
-    AUTO_LEAVE_TIME = int(os.environ.get("AUTO_LEAVE_ASSISTANT_TIME", "54000")) # in seconds
-    AUTO_LEAVE = os.environ.get('AUTO_LEAVING_ASSISTANT', None) # Change it to "True"
     ASSISTANT_ID = int(os.environ.get("ASSISTANT_ID", "5470233619")) # required
