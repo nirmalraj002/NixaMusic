@@ -1,23 +1,40 @@
 import os
+import sys
+import asyncio
+from time import time
+from datetime import datetime
+
+
 from telethon import Button, events
+
 from NixaMusic import *
 
-IMG = os.environ.get(
-    "PING_PIC", "https://te.legra.ph/file/899e50f653c019748c90e.jpg"
+START_TIME = datetime.utcnow()
+TIME_DURATION_UNITS = (
+    ('Week', 60 * 60 * 24 * 7),
+    ('Day', 60 * 60 * 24),
+    ('Hour', 60 * 60),
+    ('Min', 60),
+    ('Sec', 1)
 )
-ms = 501.455
-
-ALIVE = os.environ.get(
-    "ALIVE", "[sᴜᴍɪᴛ ʏᴀᴅᴀᴠ](https://t.me/Simple_Munda)"
-)
-
-CAPTION = f"**ᴘ ᴏ ɴ ɢ !**\n\n   » {ms}\n   » ᴍʏ ᴍᴀsᴛᴇʀ ~ {ALIVE}"
+async def _human_time_duration(seconds):
+    if seconds == 0:
+        return 'inf'
+    parts = []
+    for unit, div in TIME_DURATION_UNITS:
+        amount, seconds = divmod(int(seconds), div)
+        if amount > 0:
+            parts.append('{} {}{}'
+                         .format(amount, unit, "" if amount == 1 else "s"))
+    return ', '.join(parts)
 
 
 @NixaMusic.on(events.NewMessage(pattern="^/ping"))
 async def _(event):
-    bsdk = [[
-             Button.url("sᴜᴘᴘᴏʀᴛ", url="https://t.me/Hindi_English_Chatt"),
-             Button.url("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Fake_Peoples")
-                       ]]
-    await Anon.send_file(event.chat_id, IMG, caption=CAPTION, buttons=bsdk)
+   start = time()
+   current_time = datetime.utcnow()
+   delta_ping = time() - start
+   uptime_sec = (current_time - START_TIME).total_seconds()
+   uptime = await _human_time_duration(int(uptime_sec))
+   UMM = [[Button.url("⚜ Cԋαɳɳҽʅ ⚜", "https://t.me/TheUpdatesChannel")]]
+   await event.reply(f"╰☞ 𝗣𝗢𝗡𝗚™╮\n☞ {delta_ping * 1000:.3f}\n☞ {uptime}", buttons=UMM)
