@@ -1,10 +1,10 @@
   import os
 
 class vars(object):
-    API_ID = int(os.environ.get("APP_ID", "15523618"))
-    API_HASH = os.environ.get("API_HASH", "8979514968543c31a37a3ed8a0726d83")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5985275666:AAH6rGSsF63dt2SzKf1gWig9Lu1HcXJRx3w")
-    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOJ4Bux66T7uXdYWZa7iHoRgSyWZNRDQS0H-Um8w0WWdmyg5LvRw91yNf8IYvSjOIiaH9sEekgFyyedj42UtFHRawIuyRVR0vPV5qdFRxOeoATrnUDxIlta45E6L7MGIMK2lg9WnMkMBowrrwZJB55u06Wtk8C2qn4ZftTPJtcdSiR_DwZ_DhIvov6dxq6oBuyFeja_UVmGcb8_9i3jDwEPPqXm-AXqWxsc6EktG9T2cqc-qSDSS5ghvRsWCKFRWRTV338f6AmFxg6KMp4WMXhtgkHbrRraCsM4FA5-Gvzu1lM3GnllHSFV5w26yQRgmSotQAACOzrd5bxiLnr0NMnE6WcPk=")
+    API_ID = int(os.environ.get("APP_ID", "23842900"))
+    API_HASH = os.environ.get("API_HASH", "d21e95895cf2a5b83b0167fdd3b6e541")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5916376879:AAGOiLBT-WVOcEMoThxsP83N4t80hs8qNKw")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOJ4BuwZjqRC7_yOHBcgEAynslI1t8tSINzBnzEw2_ldnYdQx1hIzX1LnqSfIOZXmQt_m42v75FUQVPqaxbqMz3hhB2xhyz7kjvOXwD7oz8Cxr-g-d-zwpV8a59m4AhKE2tVzelE3Dro5DDiDhgAVb0vXSMflsSN88Y6zSqFsDCHuPxDaO6_4AdSZWsxjadwUTq3erhte2mjcqAHPLd1-GYFvz7M3-2oJ_5BdgDCwGwFPWftJmq6wd54RvzkxtN4s82DRiKkWEjSOqNpScW3-NUT2L35RL9QhpvFC9z8beqrlXjsAM65GgtRaV0MeHNZy1ibpPxVbDDgsm_B7F2d0lOb-cqs=")
     HEROKU_MODE = os.environ.get("HEROKU_MODE", None)
     MANAGEMENT_MODE = os.environ.get("MANAGEMENT_MODE", None)
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "NixaMusicXBot")
