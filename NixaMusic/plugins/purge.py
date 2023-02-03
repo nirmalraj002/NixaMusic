@@ -1,5 +1,5 @@
 from telethon import events, Button
-from NixaMusic import NixMusic
+from NixaMusic import NixaMusic
 from NixaMusic.status import *
 import time
 from vars import vars
