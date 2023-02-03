@@ -24,34 +24,34 @@ async def lock(event, perm):
        await event.reply("ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ sᴘᴇᴄɪғɪᴇᴅ ᴀɴʏᴛʜɪɴɢ ᴛᴏ ʟᴏᴄᴋ.")
        return
     if "text" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_messages=False)
+       await NixaMusic.edit_permissions(event.chat_id, send_messages=False)
        await event.reply("ʟᴏᴄᴋᴇᴅ `ᴛᴇxᴛ`.")
     elif "media" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_media=False)
+       await NixaMusic.edit_permissions(event.chat_id, send_media=False)
        await event.reply("ʟᴏᴄᴋᴇᴅ `ᴍᴇᴅɪᴀ`.")
     elif "sticker" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_stickers=False)
+       await NixaMusic.edit_permissions(event.chat_id, send_stickers=False)
        await event.reply("ʟᴏᴄᴋᴇᴅ `sᴛɪᴄᴋᴇʀ`.")
     elif "gifs" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_gifs=False)
+       await NixaMusic.edit_permissions(event.chat_id, send_gifs=False)
        await event.reply("ʟᴏᴄᴋᴇᴅ `ɢɪғs`.")
     elif "forward" in input_str:
-       await Stark.edit_permissions(event.chat_id, forwards=False)
+       await NixaMusic.edit_permissions(event.chat_id, forwards=False)
        await event.reply("ʟᴏᴄᴋᴇᴅ `ғᴏʀᴡᴀʀᴅ`.")
     elif "games" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_games=False)
+       await NixaMusic.edit_permissions(event.chat_id, send_games=False)
        await event.reply("ʟᴏᴄᴋᴇᴅ `ɢᴀᴍᴇs`.")
     elif "inline" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_inline=False)
+       await NixaMusic.edit_permissions(event.chat_id, send_inline=False)
        await event.reply("ʟᴏᴄᴋᴇᴅ `ɪɴʟɪɴᴇ`.")
     elif "polls" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_polls=False)
+       await NixaMusic.edit_permissions(event.chat_id, send_polls=False)
        await event.reply("ʟᴏᴄᴋᴇᴅ `ᴘᴏʟʟs`.")
     elif "preview" in input_str:
-       await Stark.edit_permissions(event.chat_id, embed_link_previews=False)
+       await NixaMusic.edit_permissions(event.chat_id, embed_link_previews=False)
        await event.reply("ʟᴏᴄᴋᴇᴅ `ᴘʀᴇᴠɪᴇᴡ`.")
     elif "all" in input_str:
-       await Anon.edit_permissions(event.chat_id,
+       await NixaMusic.edit_permissions(event.chat_id,
           send_messages=False, 
           send_media=False,
           send_stickers=False,
@@ -76,34 +76,34 @@ async def unlock(event, perm):
        await event.reply("ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ sᴘᴇᴄɪғɪᴇᴅ ᴀɴʏᴛʜɪɴɢ ᴛᴏ ʟᴏᴄᴋ.")
        return
     if "text" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_messages=True)
+       await NixaMusic.edit_permissions(event.chat_id, send_messages=True)
        await event.reply("ᴜɴʟᴏᴄᴋᴇᴅ `ᴛᴇxᴛ`.")
     elif "media" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_media=True)
+       await NixaMusic.edit_permissions(event.chat_id, send_media=True)
        await event.reply("ᴜɴʟᴏᴄᴋᴇᴅ `ᴍᴇᴅɪᴀ`.")
     elif "sticker" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_stickers=True)
+       await NixaMusic.edit_permissions(event.chat_id, send_stickers=True)
        await event.reply("ᴜɴʟᴏᴄᴋᴇᴅ `sᴛɪᴄᴋᴇʀ`.")
     elif "gifs" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_gifs=True)
+       await NixaMusic.edit_permissions(event.chat_id, send_gifs=True)
        await event.reply("ᴜɴʟᴏᴄᴋᴇᴅ `ɢɪғs`.")
     elif "forward" in input_str:
-       await Stark.edit_permissions(event.chat_id, forwards=True)
+       await NixaMusic.edit_permissions(event.chat_id, forwards=True)
        await event.reply("ᴜɴʟᴏᴄᴋᴇᴅ `ғᴏʀᴡᴀʀᴅ`.")
     elif "games" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_games=True)
+       await NixaMusic.edit_permissions(event.chat_id, send_games=True)
        await event.reply("ᴜɴʟᴏᴄᴋᴇᴅ `ɢᴀᴍᴇs`.")
     elif "inline" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_inline=True)
+       await NixaMusic.edit_permissions(event.chat_id, send_inline=True)
        await event.reply("ᴜɴʟᴏᴄᴋᴇᴅ `ɪɴʟɪɴᴇ`.")
     elif "polls" in input_str:
-       await Stark.edit_permissions(event.chat_id, send_polls=True)
+       await NixaMusic.edit_permissions(event.chat_id, send_polls=True)
        await event.reply("ᴜɴʟᴏᴄᴋᴇᴅ `ᴘᴏʟʟs`.")
     elif "preview" in input_str:
-       await Stark.edit_permissions(event.chat_id, embed_link_previews=True)
+       await NixaMusic.edit_permissions(event.chat_id, embed_link_previews=True)
        await event.reply("ᴜɴʟᴏᴄᴋᴇᴅ `ᴘʀᴇᴠɪᴇᴡ`.")
     elif "all" in input_str:
-       await Anon.edit_permissions(event.chat_id,
+       await NixaMusic.edit_permissions(event.chat_id,
           send_messages=True, 
           send_media=True,
           send_stickers=True,
