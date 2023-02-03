@@ -40,7 +40,7 @@ async def pin(event, perm):
     if "notify" in input_str:
        await NixaMusic.pin_message(event.chat_id, msg, notify=True)
        return
-    await NisthaMusic.pin_message(event.chat_id, msg)   
+    await NixaMusic.pin_message(event.chat_id, msg)   
 
 @NixaMusic.on(events.NewMessage(pattern="^[!?/]unpin"))
 @is_admin
