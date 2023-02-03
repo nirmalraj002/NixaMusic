@@ -58,8 +58,8 @@ async def info(event):
  
     input_str = event.pattern_match.group(1)
     ha = await Anon.get_entity(input_str)
-    hu = await Anon(GetFullUserRequest(id=input_str))
-    sedd = await Anon(P(user_id=input_str, offset=42, max_id=0, limit=80))
+    hu = await NixaMusic(GetFullUserRequest(id=input_str))
+    sedd = await NixaMusic(P(user_id=input_str, offset=42, max_id=0, limit=80))
 
     textn = "**» ᴜsᴇʀ ɪɴғᴏ:**\n\n"
     textn += "**» ғɪʀsᴛ ɴᴀᴍᴇ:** {}\n"
